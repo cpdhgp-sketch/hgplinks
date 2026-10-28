@@ -162,7 +162,7 @@ const DEFAULT_SYSTEMS = [
     acronym: "LABORATÓRIO",
     category: "sistemas",
     description: "Sistema de Informações Laboratoriais (LIS) e resultados de exames de sangue.",
-    defaultUrl: "https://neolabdiagnostico.com.br/",
+    defaultUrl: "https://labresult.shiftcloud.com.br/shift/lis/labresult/elis/s01.iu.interface.web.consulta.Procedimento.cls?config=UNICO&sigla=",
     status: "Online",
     iconCategory: "sistemas",
     imageUrl: "neolab.png"
