@@ -162,7 +162,7 @@ const DEFAULT_SYSTEMS = [
     acronym: "LABORATÓRIO",
     category: "sistemas",
     description: "Sistema de Informações Laboratoriais (LIS) e resultados de exames de sangue.",
-    defaultUrl: "https://labresult.shiftcloud.com.br/shift/lis/labresult/elis/s01.iu.interface.web.consulta.Procedimento.cls?config=UNICO&sigla=",
+    defaultUrl: "https://labresult.shiftcloud.com.br/shift/lis/labresult/elis/s01.iu.web.Login.cls?config=UNICO&sigla=",
     status: "Online",
     iconCategory: "sistemas",
     imageUrl: "neolab.png"
@@ -499,8 +499,10 @@ function renderLinksGrid() {
       let extraStyle = "";
       if (["mv_sacr", "intranet_sesau", "mobile_med", "ellos_ecm", "apac", "cadweb", "apurasus", "codigos_medicamentos_mv", "siscan", "sisaiveh", "ser", "sisreg", "sistemas_saude"].includes(sys.id)) {
         extraStyle = 'style="transform: scale(1.6);"';
-      } else if (["cnes", "neolab"].includes(sys.id)) {
+      } else if (sys.id === "cnes") {
         extraStyle = 'style="transform: scale(1.05);"';
+      } else if (sys.id === "neolab") {
+        extraStyle = 'style="transform: scale(1.35);"';
       } else if (sys.id === "suporte_whatsapp") {
         extraStyle = 'style="transform: scale(1.0);"';
       }
